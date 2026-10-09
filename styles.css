@@ -161,15 +161,9 @@ div.hobbies-content {
 }
 
 div.hobbies-bottom {
-<<<<<<< HEAD
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-=======
-    display: grid;
-    grid-template-columns: 25% 25%;
-    justify-content: space-evenly;
->>>>>>> 084e950774159d5f17f8fbd5eca7b8227a78948e
 }
 
 .hobbies-content div {
