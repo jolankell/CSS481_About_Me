@@ -1,71 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="styles.css">
         <meta charset="utf-8">
         <title>Nolan's hobbies</title>
     </head>
-    <body>
+    <body class="hobbies">
         <nav>
             <a href="index.html">Home</a>
             <a href="about_me.html">About Me</a>
             <a href="hobbies.html">Hobbies</a>
         </nav>
         <h1>Hobbies outside of school:</h1>
-        <h2>Gym:</h2>
-        <ul>
-            <li>I like to go to the gym and workout</li>
-            <li>I am into bodybuilding</li>
-        </ul>
-        <h3>Video Games:</h3>
-        <ul>
-            <li>Titanfall 2</li>
-            <li>Fortnite</li>
-            <li>Fifa</li>
-            <li>Mario Party</li>
-            <li>Mario Kart</li>
-        </ul>
-        <h4>Programming/Sofotware:</h4>
-        <ul>
-            <li>When I am on break from school, I like to continue my learning and develop software projects on my own</li>
-            <li>This past summer (summer 2026) I built a reminder application for my laptop</li>
-            <li>In previous years, I developed simple 2D video games in C++</li>
-        </ul>
-        <h5>Movies/Tele:</h5>
-        <ul>
-            <li>I enjoy watching movies and tv when I have free time from school</li>
-            <li>My favorite genres are action and comedy</li>
-        </ul>
-        <h6>Sports:</h6>
-        <ul>
-            <li>My favorite sport is Football/Soccer</li>
-            <li>I am english, and my family is from Liverpool, so I spend a lot of time following and watching games of Liverpool F.C.</li>
-            <li>I love to play fantasy sports games, I play in American Football fantasy leagues, and premier league fantasy leagues</li>
-        </ul>
-        <h6>My current favorite song:</h6>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/9leAwpph-xs?si=XwjZ-sUUUBh9emwa" title="YouTube video player" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="hobbies-content">
+            <div>
+                <h2>Gym:</h2>
+                <ul>
+                    <li>I like to go to the gym and workout</li>
+                    <li>I am into bodybuilding</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Video Games:</h3>
+                <ul>
+                    <li>Titanfall 2</li>
+                    <li>Fortnite</li>
+                    <li>Fifa</li>
+                    <li>Mario Party</li>
+                    <li>Mario Kart</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Programming/Sofotware:</h4>
+                <ul>
+                    <li>When I am on break from school, I like to continue my learning and develop software projects on my own</li>
+                    <li>This past summer (summer 2026) I built a reminder application for my laptop</li>
+                    <li>In previous years, I developed simple 2D video games in C++</li>
+                </ul>
+            </div>
+            <div>
+                <h5>Movies/Tele:</h5>
+                <ul>
+                    <li>I enjoy watching movies and tv when I have free time from school</li>
+                    <li>My favorite genres are action and comedy</li>
+                </ul>
+            </div>
+            <div>
+                <h6>Sports:</h6>
+                <ul>
+                    <li>My favorite sport is Football/Soccer</li>
+                    <li>I am english, and my family is from Liverpool, so I spend a lot of time following and watching games of Liverpool F.C.</li>
+                    <li>I love to play fantasy sports games, I play in American Football fantasy leagues, and premier league fantasy leagues</li>
+                </ul>
+            </div>
+        </div>
 
-        <fieldset>
-            <legend>Want to be my friend?</legend>
-            <form action="/null" method="POST">
-                <label for="info">About you:</label>
-                <textarea id="info" name="info" required></textarea>
-                <br>
-                <label for="age">Age:</label>
-                <input type="number" id="age" name="age" required min="0" max="100">
-                <br>
-                <label for="drinks">Favorite Drink:</label>
-                <select name="drinks" id="drinks">
-                    <option value="Energy Drinks">Energy Drinks</option>
-                    <option value="Tea">Tea</option>
-                    <option value="Water">Water</option>
-                    <option value="Milk">Milk</option>
-                    <option value="Other">Other</option>
-                </select>
-                <br>
-                <button>Submit</button>
-            </form>
-        </fieldset>
+        <div class="hobbies-bottom">
+            <div>
+                <h6>My current favorite song:</h6>
+                <iframe src="https://www.youtube.com/embed/9leAwpph-xs?si=XwjZ-sUUUBh9emwa" title="YouTube video player" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Want to be my friend?</legend>
+                    <form action="/null" method="POST">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" required min="0" max="100">
+                        <br>
+                        <label for="drinks">Favorite Drink:</label>
+                        <select name="drinks" id="drinks">
+                            <option value="Energy Drinks">Energy Drinks</option>
+                            <option value="Tea">Tea</option>
+                            <option value="Water">Water</option>
+                            <option value="Milk">Milk</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <br>
+                        <label for="info">About you:</label>
+                        <br>
+                        <textarea id="info" name="info" required></textarea>
+                        <br>
+                        <button>Submit</button>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
     </body>
 </html>
